@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!-- <style>
+        #carouselExampleCaptions,
+        .navbar,
+        .navbar-expand-lg,
+        .navbar-dark bg-dark {
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+    </style> -->
+    <style>
+        #mama{
+            height: 260px;
+            width: 230px;
+        }
+    </style>
+
+    <title>DScoder Home</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+        <a class="navbar-brand" href="dcoder.html">DScoder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dcoder.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TOPICS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.javatpoint.com/python-tutorial" target="_block">PYTHON</a>
+                        <a class="dropdown-item" href="https://www.geeksforgeeks.org/django-tutorial/" target="_block">DJANGO</a>
+                        
+                        <a class="dropdown-item" href="https://www.w3schools.com/html/html_intro.asp"target="_block">HTML</a>
+                         <a class="dropdown-item" href="https://www.w3schools.com/css/css_intro.asp" target="_block">CSS</a>
+                         <a class="dropdown-item" href="https://www.w3schools.com/nodejs/nodejs_intro.asp" target="_block">Node.js</a>
+                         <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="http://www.aidinasaur.com/machinelearning.html" target="_block">Machine Learning</a>
+                          <a class="dropdown-item" href="http://www.aidinasaur.com/index.html#" target="_block">Deep Learning</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACTS</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    Search
+                </button>
+            </form>
+            <div>
+                <button class="btn btn-outline-primary my-2 my-sm-0 mx-2" data-toggle="modal"
+                    data-target="#signupModal">
+                    SIGNUP
+                </button>
+                <button class="btn btn-outline-warning my-2 my-sm-0" data-toggle="modal" data-target="#loginModal"
+                    type="submit">
+                    LOGIN
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To DScoder</h5>
+                    <p>This Is One Of The World Best Blogging Site. </p>
+                    <button type="button" class="btn btn-success">Technology</button>
+                    <button type="button" class="btn btn-danger">
+                        Web Development
+                    </button>
+                    <button type="button" class="btn btn-warning">TechFun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>CodingGeeks </h5>
+                    <p>Hey Geeks Welcome To The DScoder</p>
+                    <button type="button" class="btn btn-success">Technology</button>
+                    <button type="button" class="btn btn-danger">
+                        Web Development
+                    </button>
+                    <button type="button" class="btn btn-warning">TechFun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>CodeNinja</h5>
+                    <p>
+                        Let's Fights With Turtules,Hey Conda
+                    </p>
+                    <button type="button" class="btn btn-success">Technology</button>
+                    <button type="button" class="btn btn-danger">
+                        Web Development
+                    </button>
+                    <button type="button" class="btn btn-warning">TechFun</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: #785ec0;">
+                    <div class="col p-4 d-flex flex-column position-static text-light">
+                        <strong class="d-inline-block mb-2 text-primary">Web</strong>
+                        <h3 class="mb-0">Front-End Development</h3>
+                        <div class="mb-1 text-muted">AUG 12</div>
+                        <p class="card-text mb-auto">
+                          Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript....... 
+                        </p>
+                        <a href="fed.html" class="stretched-link">Continue Reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="t5.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: #a1a6aa;">
+                    <div class="col p-4 d-flex flex-column position-static text-light">
+                        <strong class="d-inline-block mb-2 text-success">Python</strong>
+                        <h3 class="mb-0">Download Video From Python </h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">
+                            Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript....... 
+                        </p>
+                        <a href="#" class="stretched-link">Continue Reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="t2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-dark">
+                    <div class="col p-4 d-flex flex-column position-static text-light">
+                        <strong class="d-inline-block mb-2 text-danger">Django</strong>
+                        <h3 class="mb-0">Back-End Development</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">
+                            Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript.......
+                        </p>
+                        <a href="#" class="stretched-link">Continue Reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="t3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: #b1e5ec;">
+                    <div class="col p-4 d-flex flex-column position-static text-dark">
+                        <strong class="d-inline-block mb-2 text-warning">OpenCV</strong>
+                        <h3 class="mb-0">Machine Learning & Artificial Intelligence</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="card-text mb-auto">
+                            Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript.......
+                        </p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img"  width="200" height="250" src="t4.jpg" alt="" />
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class="container bg-dark">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top text-light">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24" />
+                    <small class="d-block mb-3 text-muted">© 2019-2020</small>
+                </div>
+                <div class="col-6 col-md ">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.2403387122527!2d83.91351768070089!3d26.738311645393605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993eb409f4c68df%3A0x6b43e237a924afd6!2sCivil%20coart%20kasia%20kushinagar!5e0!3m2!1sen!2sin!4v1595639193570!5m2!1sen!2sin>Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--  login modal  -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signupInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="signupInputEmail1"
+                                aria-describedby="emailHelp" />
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="signupInputPassword1" />
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupInputPassword1" />
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="signupCheck1" />
+                            <label class="form-check-label" for="signupCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
